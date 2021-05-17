@@ -17,6 +17,7 @@ function App() {
             <Route exact path="/" component={Home}/> 
             <Route path="/add" component={AddUser}/>
             <Route path="/edit/:id" component={EditUser}/>
+            <Route component={() => <h1>Page Not Found</h1>} />
           </Switch>
         </Router>
       </GlobalProvider>
